@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Meditation App</title>
+</head>
+<body>
+
+    <div class="app">
+
+        <img class="vid-container" src="tenor.gif" alt="tenor">
+        
+
+        <div class="time-select">
+            
+            <button data-time="60" >1 Minutes</button>
+            <button data-time="120" >2 Minutes</button>
+            <button data-time="300" >5 Minutes</button>
+             
+        </div>
+        <div class="player-container">
+            
+            <audio src="/songs/mixkit-driving-ambition-32.mp3" class="song"></audio>
+
+            <img src="playbtn.jpg" alt="img1" class="play">
+
+            <h3 class="time-display">00:00</h3>
+
+        </div>
+
+        <div class="sound-picker">
+
+            <button data-sound="/songs/mixkit-driving-ambition-32.mp3">
+                <img src="/images/images1.jpg" alt="img1">
+            </button>
+            <button data-sound="/songs/mixkit-one-more-dance-288.mp3">
+                <img src="/images/images2.jpg" alt="img2">
+            </button>
+            <button data-sound="/songs/mixkit-serene-moments-27.mp3">
+                <img src="/images/images3.png" alt="img3">
+            </button>
+
+        </div>
+
+    </div> 
+
+
+    <script src="app.js"></script>
+</body>
+</html>

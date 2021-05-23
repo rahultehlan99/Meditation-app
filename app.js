@@ -26,6 +26,7 @@ const app = () => {
               return;
           }
           
+        
           currduration=duration;
 
           clearInterval(x);
@@ -43,8 +44,11 @@ const app = () => {
            return;
        }
         
-        if(currduration==0)
-        currduration=duration;
+       if(currduration==0)
+        { 
+          song.currentTime=0;
+          currduration=duration;
+        }
 
         checkplaying(song);
    });
@@ -65,6 +69,11 @@ const app = () => {
     
     if(song.paused)
     {
+        if(currduration==0)
+        {
+            return;
+        }
+
         x = setInterval(computetime,1000);
 
         song.play();
